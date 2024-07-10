@@ -1,117 +1,152 @@
-
 <!DOCTYPE HTML>
 <html>
-	<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXNJ5VGGKE"></script>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXNJ5VGGKE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WXNJ5VGGKE');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gokul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio site" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Space Mono', monospace;
+            background: #f0f0f0;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Kaushan Script', cursive;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-slide h2 {
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+        .swiper-slide p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="fh5co-loader"></div>
+
+<div id="page">  
+    <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t js-fullheight">
+                        <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+                            <h1><span>Gokulakrishnan Sethuraman</span></h1>
+                            <h3><span>Technical Team Lead | Senior Data Analyst | AWS Cloud Engineer | SME</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header">
+        <h2>Roles and Responsibilities & Achievements</h2>
+    </div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>Roles and Responsibilities</h2>
+                <p>Working as Subject Matter Expert for Stellantis Manufacturing - Assembly Stamping Plant Systems / Stamping Powertrain Plant Systems.</p>
+                <p>Worked in AWS Services and Implemented CI/CD pipelines with Jenkins, Docker Images, Kubernetes for automated application deployments.</p>
+                <p>24X7 Support Assembly Stamping and Powertrain applications Systems.</p>
+                <p>Migrated Mainframe mission critical Plant system to web based systems to track Plant Lost Units.</p>
+                <p>Assisted in developing and maintaining documentation of all incidents, ensuring accuracy and completeness.</p>
+                <p>Ensure the Incident/tasks are resolved well within service level agreements (SLA).</p>
+                <p>Create appropriate documentation in work assignments such as program code, and technical documentation.</p>
+                <p>Perform SonarQube inspection of code quality reviews to detect bugs, security vulnerabilities.</p>
+                <p>Reviewing deliverables that include requirements documents, design documents, code, test plans, test results, etc., before being sent to client.</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>Achievements</h2>
+                <p>Migrated mission critical Plant system applications to CICD pipeline and automated deployments.</p>
+                <p>Received Innovation Award for Bill of Material and saves $40,000 per year for Stellantis.</p>
+				<p>Implemented Fiat 500 RSA and MIPS Reduction helps to CPU Cost Savings</p>
+                <p>Mentored DECP new joiners and implemented DXC Forum project & RFP module through freshers and got applause from senior management.</p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!-- Initialize Swiper -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WXNJ5VGGKE');
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 </script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Gokul</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Portfolio site" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Theme style  -->
-
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							
-							<h1><span>Gokulakrishnan Sethuraman</span></h1>
-							<h3><span>Technical Team Lead | Senior Data Analyst | AWS Cloud Engineer | SME </span></h3>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	
-				<div class="col-md-8">
-					<h2>Roles and Responsiblities</h2>
-					<p>Working as Subject Matter Expert for Stellantis Manufacturing -  Assembly Stamping Plant Systems  / Stamping Powertrain Plant Systems.</p>Worked in AWS Services and Implemented CI/CD pipelines with Jenkins ,Docker Images,Kubernetes for automated application deployments.<p>
-					24X7 Support Assembly Stamping and Powertrain applications Systems.</p>
-					Migrated Mainframe mission critical Plant system to web based systems to track Plant Lost Units.<p>Assisted in developing and maintaining documentation of all incidents, ensuring accuracy and completeness.
- Ensure the Incident/tasks are resolved well within service level agreements (SLA)
-Create appropriate documentation in work assignments such as program code, and technical documentation.</p>
-Perform SonarQube inspection of code quality reviews to detect bugs, security vulnerabilities.
-Reviewing deliverables that include requirements documents, design documents, code, test plans, test results, etc., before being sent to client.
-						</p>
-					
-					<h2>Achievements</h2>
-					<p>Migrated mission critical Plant system applications to CICD pipeline and automated deployments.<p>
-Received Innovation Award for Bill of Material and saves 40,000$ per year for Stellantis.</p>
-<p>Mentored DECP new joiners and implemented DXC Forum project & RFP module through freshers and got applause from senior management.</p>
-					
-						<!-- <ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-						</ul> -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	
-	
-
-	
-	
-
-	</body>
+</body>
 </html>
-
