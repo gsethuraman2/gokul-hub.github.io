@@ -73,6 +73,29 @@
             text-align: center;
             margin-bottom: 40px;
         }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
     </style>
 
     <!-- Modernizr JS -->
@@ -83,6 +106,26 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- Custom JS -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Hide the swiper container
+            document.querySelector('.swiper-container').style.display = 'none';
+            // Show the clicked section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show "Roles and Responsibilities" section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('roles-responsibilities');
+            document.querySelector('.swiper-container').style.display = 'block';
+        });
+    </script>
 </head>
 <body>
 
@@ -97,7 +140,7 @@
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
                             <h1><span>Gokulakrishnan Sethuraman</span></h1>
-                            <h3><span>Technical Team Lead | Senior Data Analyst | AWS Cloud Engineer | SME</span></h3>
+                            <h3><span>Team Lead | Senior Data Analyst | AWS Cloud Engineer | SME</span></h3>
                         </div>
                     </div>
                 </div>
@@ -105,9 +148,102 @@
         </div>
     </header>
 
-    <div class="header">
-        <h2>Roles and Responsibilities & Achievements</h2>
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="showSection('project-details')">Project Details</a>
+		 <a href="javascript:void(0);" onclick="showSection('roles-responsibilities1')">Roles and Responsibilities</a>
+        <a href="javascript:void(0);" onclick="showSection('certification-details')">Certification Details</a>
+        <a href="javascript:void(0);" onclick="showSection('solutioning')">Solutioning</a>
+        <a href="javascript:void(0);" onclick="showSection('work-rewards')">Work Rewards</a>
+		<a href="javascript:void(0);" onclick="showSection('mentoring')">Mentoring</a>
     </div>
+
+   
+
+    <section id="project-details" style="display: none;">
+        <div class="header">
+            <h2>Project Details</h2>
+        </div>
+		<p>Stellantis Manufacturing - Work Management System/ Assembly Stamping Plant Systems  / Stamping Powertrain Plant Systems</p>
+        <p>The Work Management System (WMS) is a web application used for Chrysler’s infrastructure maintenance.It allows employees to create a Service Request (SR) to address their infrastructure needs at any Chrysler facility. WMS supported Service Request such as Telephone/Computer/Data Line Request,Key Request and General Request<p>
+<p>The PFS website is a tool for the assembly plants to aid in their day-to-day operations. 
+All the reports are grouped under 6 categories (Executive – for higher ups, Supervisor – plant supervisor level, Team – Team level, Engineer- Analyst level, Surface Finish – issues deal with surface finish, Support-Glossary and information</p>
+<p>Vehicle Order Processing (VOP) handles Vehicle Orders from Highland Park to the assembly plants. Orders are processed and reformatted for use by others systems. Mainframe applications include plants Order entry, Vehicle Edit, Miscellaneous Records processing, Ad Hoc Reporting at assembly plants, and end of Production Processing that synchronizes the HPDC Data base to the plant visa file. Key words that may indicate the problem belongs to this group are Visa file or Vehicle Order Processing</p>
+<p>Broadcast - Tracks Vehicle Status and Vehicle Build Documents.Cics Applications on Regional Data centers with 3270 Environment Terminals and Printers.
+There is some communications MVS TCP/IP to AVI and VMS Wcc controllers and this group supports all assembly plants
+</p>
+<p>Manufacturing Dashboard is a web portal that displays both static and dynamic content of the various units that are coming under the manufacturing unit namely Stamping, Power train and Assembly.
+This application pulls data from various applications (Databases) such as PDR (production), CATS (Labor), Scheduling (CMIS), Inventory (OPTS) and Shipping (SDS) to create the dynamic report.
+It is distributed across the various plants such as WSP, SSP and TSP data centers.
+</p>
+<p>Mopar Macs is mopar automated catalog systems it’s a  Catalog for the Client and also its has graphical diagram for the each automated parts and systems.EPC is electronic parts catalog systems which is also a cataloging systems involves the accessories things of vehicle will be loaded to star parts enduser from EPC.</p>
+    </section>
+
+    <section id="certification-details" style="display: none;">
+        <div class="header">
+            <h2>Certification Details</h2>
+        </div>
+        <p>Cloud Computing and Distributed Systems – 2023</p>
+<p>Java Full Stack Professional Program at DXC</p>
+<p>Professional Scrum Master 1 PSM1 – 2021</p>
+</p>Professional Scrum Master 2 PSM2 – 2021</p>
+</p>Sun Certified Java Programmer SE 5.0 – 2008</p>
+</p>DevOps - Jenkins, Docker and Kubernetes Training</p>
+<p>AWS Cloud Practitioner Essentials</p>
+.</p>
+    </section>
+
+    <section id="solutioning" style="display: none;">
+        <div class="header">
+            <h2>Solutioning</h2>
+        </div>
+       <p>Supported ADAS Stellantis to fix deployment issues for SCALA upgrades and dependency issues</p>
+<p>Supported and provided support for MLDE Memory issue for Data management team</p>
+<p>Created RFP Module for Capability team to determine new proposals and migration projects</p>
+<p>Provided solution to Pentasap webservice Connectivity issue with TMS application provided timely fix helped the app team</p> 
+<p>Supported Dynatrace systems report slowness and JVM issues due to memory leaks</p>
+<p>Involved in Mainframe modernization calls for Performance Feedback system and Broadcast Modular Build Systems for providing the high-level estimates</p>
+    </section>
+
+    <section id="work-rewards" style="display: none;">
+        <div class="header">
+            <h2>Work Rewards and Recoginitions</h2>
+        </div>
+       <p>Executive Reporting systems PC1 Mainframe system migrations to Web Application – Highly recognized and received client award.</p>
+<p>Received Innovation Award for Bill of Material and saves 40,000$ per year for Stellantis</pp>
+<p>Received Applause awards for MIPS RSA and FIAT 500 Project</p>
+<p>Have been recognized by DXC Quarterly Champs awards for FY24 Q1 & Q4, FY23 Q4, FY23 Q2</p>
+<p>Received FY22 H2 Collaborators Award<p>
+<p>Have been Rated 1 - Exceptional Impact for last 3 consecutive years (2021-2024)</p>
+    </section>
+	
+	<section id="roles-responsibilities1" style="display: none;">
+        <div class="header">
+            <h2>Roles and Responsibilities</h2>
+        </div>
+       
+                <p>Working as Subject Matter Expert for Stellantis Manufacturing - Assembly Stamping Plant Systems / Stamping Powertrain Plant Systems.</p>
+                <p>Worked in AWS Services and Implemented CI/CD pipelines with Jenkins, Docker Images, Kubernetes for automated application deployments.</p>
+                <p>24X7 Support Assembly Stamping and Powertrain applications Systems.</p>
+                <p>Migrated Mainframe mission critical Plant system to web based systems to track Plant Lost Units.</p>
+                <p>Assisted in developing and maintaining documentation of all incidents, ensuring accuracy and completeness.</p>
+                <p>Ensure the Incident/tasks are resolved well within service level agreements (SLA).</p>
+                <p>Create appropriate documentation in work assignments such as program code, and technical documentation.</p>
+                <p>Perform SonarQube inspection of code quality reviews to detect bugs, security vulnerabilities.</p>
+                <p>Reviewing deliverables that include requirements documents, design documents, code, test plans, test results, etc., before being sent to client.</p>
+    </section>
+	<section id="mentoring" style="display: none;">
+        <div class="header">
+            <h2>Mentoring</h2>
+        </div>
+        <p>Mentored teams, Handled Appraisals, and Assisted with interviews for Java capabilities</p>
+		<p>Mentoring DECP's newly joining dxc helping project exposure,mini project implementations.</p>
+		<p>Guided DECP's and build DXC Forum project module and RFP Module,also trained them to do design document
+		,coding standards,implementation in Jenkins,AWS Cloud.</p>
+		<p>Also trained them to do the documentations and add in sharepoint, and Git Repositories for future references.</p>
+		<p>Will organizing Tech-Talks and share knowledge forums for senior resouces and Juniors.</p>
+		<p>Weekly Scheduled Toastmaster Sessions to Overcome hurdles for freshers joining company.</p>
+    </section>
+ <section id="roles-responsibilities">
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -127,7 +263,7 @@
                 <h2>Achievements</h2>
                 <p>Migrated mission critical Plant system applications to CICD pipeline and automated deployments.</p>
                 <p>Received Innovation Award for Bill of Material and saves $40,000 per year for Stellantis.</p>
-				<p>Implemented Fiat 500 RSA and MIPS Reduction helps to CPU Cost Savings</p>
+                <p>Implemented Fiat 500 RSA and MIPS Reduction helps to CPU Cost Savings</p>
                 <p>Mentored DECP new joiners and implemented DXC Forum project & RFP module through freshers and got applause from senior management.</p>
             </div>
         </div>
@@ -135,7 +271,7 @@
         <div class="swiper-pagination"></div>
     </div>
 </div>
-
+ </section>
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
